@@ -4,6 +4,6 @@
 #### Το Ktel Planner βρίσκει την τις ανταποκρήσεις των λεωφορείων και τις ταξινομή με βάση τον μικρότερο χρόνο αναμονής.
 
 
-![alt text](https://github.com/Kgewrg/ktel-planner/Description_images/image1.png "Αρχική σελιδα")
-![alt text](https://github.com/Kgewrg/ktel-planner/Description_images/image2.png "Επιλογή ταξιδιού")
-![alt text](https://github.com/Kgewrg/ktel-planner/Description_images/image3.png "Σελίδα αποτελεσμάτων")
+![εικόνα 1](https://github.com/Kgewrg/ktel-planner/blob/main/Description_images/image1.png "Αρχική σελιδα")
+![εικόνα 2](https://github.com/Kgewrg/ktel-planner/blob/main/Description_images/image1.png "Επιλογή ταξιδιού")
+![εικόνα 3](https://github.com/Kgewrg/ktel-planner/blob/main/Description_images/image1.png "Σελίδα αποτελεσμάτων")
