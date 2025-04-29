@@ -45,10 +45,12 @@ class _RoutesPageState extends State<RoutesPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: widget.routes.isEmpty
-          ? ErrorWidget(widget: widget)
-          : MainRoutesWidget(widget: widget),
+    return SafeArea(
+      child: Scaffold(
+        body: widget.routes.isEmpty
+            ? ErrorWidget(widget: widget)
+            : MainRoutesWidget(widget: widget),
+      ),
     );
   }
 }
@@ -74,7 +76,7 @@ class ErrorWidget extends StatelessWidget {
             ),
             padding: const EdgeInsets.all(15),
             child: Text(
-                "Δεν βρέθηκαν δρομολόγια για τις επιλογές: \nΑφαιτερία: ${globals.departureCity}\nΠροορισμός: ${globals.destinationCity}\nΗμέρα: ${widget.dayLookup[int.parse(globals.day) - 1]}\nΕλάχιστος χρόνος αναμονής: ${globals.minDelayTime.inMinutes} λεπτά\nΜέγιστος χρόνος αναμονής: ${globals.maxDelayTime.inMinutes} λεπτά",
+                "Δεν βρέθηκαν δρομολόγια για τις επιλογές: \nΑφετηρία: ${globals.departureCity}\nΠροορισμός: ${globals.destinationCity}\nΗμέρα: ${widget.dayLookup[int.parse(globals.day) - 1]}\nΕλάχιστος χρόνος αναμονής: ${globals.minDelayTime.inMinutes} λεπτά\nΜέγιστος χρόνος αναμονής: ${globals.maxDelayTime.inMinutes} λεπτά",
                 style: const TextStyle(fontSize: 18)),
           ), // error Message
           FilledButton(

@@ -281,7 +281,7 @@ class _SearchRouteButtonState extends State<SearchRouteButton> {
           context: context,
           builder: (BuildContext context) {
             return AlertDialog(
-              content: Text("Η αφαιτερία ή ο προορισμός δεν επιλέχθηκαν."),
+              content: Text("Η αφετηρία ή ο προορισμός δεν επιλέχθηκαν."),
               actions: [
                 TextButton(
                     onPressed: () => Navigator.of(context).pop(),
@@ -462,7 +462,7 @@ class _CitiesListState extends State<CitiesList> {
     filteredCities = citiesListArray;
 
     if (widget.cityDef == "depart") {
-      fullCityDef = "Αφαιτερία";
+      fullCityDef = "Αφετηρία";
     } else {
       fullCityDef = "Προορισμός";
     }
