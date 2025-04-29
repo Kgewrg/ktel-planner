@@ -13,7 +13,7 @@
 # Εγκατάσταση
 Η εφαρμογή προς το παρών είναι διαθέσιμη μόνο για κινητά android.
 Ο χρήστης μπροεί να κατεβάσει το .apk απο τον παρακάτω σύνδεσμο και να το εγκαταστάσει απο την εφαρμογή "αρχεία" του κινητού του.
-- [Ktel Planner (arm64)](https://github.com/Kgewrg/ktel-planner/blob/main/out/android/ktel_planner-arm64.apk)
+- [Ktel Planner (arm64)](https://github.com/Kgewrg/ktel-planner/releases/download/v0.1.0/ktel_planner-arm64.apk)
 
 Σε περίπτωση που εμφανιστεί μύνημα σφάλματος είναι επίσης διαθέσιμοι και οι παρακάτω σύνδεσμοι:  
 - [Ktel Planner (armeabi)](https://github.com/Kgewrg/ktel-planner/blob/main/out/android/ktel_planner-armeabi.apk)
