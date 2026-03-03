@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:main_v2/themes_global.dart';
 import 'package:main_v2/routes_page.dart';
@@ -384,7 +383,6 @@ class _CitiesListState extends State<CitiesList> {
     'Ηγουμενίτσα',
     'Ηράκλεια',
     'Ηράκλειο',
-    'Ηράκλειο',
     'Θήβα',
     'Ισθμός',
     'Ιτέα',
@@ -407,7 +405,6 @@ class _CitiesListState extends State<CitiesList> {
     'Κόρινθος',
     'Λάρισα',
     'Λήμνος',
-    'Λαμία',
     'Λαμία',
     'Λεπτοκαρυά',
     'Λευκάδα',
@@ -453,8 +450,7 @@ class _CitiesListState extends State<CitiesList> {
     'Φιλιππιάδα',
     'Φλώρινα',
     'Χαλκίδα',
-    'Χανιά',
-    'Χανιά',
+    'Χανιά'
   ];
 
   @override

@@ -1,18 +1,17 @@
-# Ktel Planner
-# Περιγραφή 
-#### Μια εφαρμογή που στοχεύει να βοηθήσει τους ταξιδιώτες που χρησιμοποιούν το ΚΤΕΛ ΜΑΚΕΔΟΝΙΑΣ ως ενδιάμεση στάση.
-#### Το Ktel Planner βρίσκει τα δρομολόγια και τα ταξινομεί με βάση τον μικρότερο χρόνο αναμονής για την ανταπόκριση.  
+# ktel_planner_new
 
-# Εικόνες
-<p aling="left">
-<img src="https://github.com/Kgewrg/ktel-planner/blob/main/Description_images/image1.png" alt="εικόνα 1" width="150"/>
-<img src="https://github.com/Kgewrg/ktel-planner/blob/main/Description_images/image2.png" alt="εικόνα 2" width="150"/>
-<img src="https://github.com/Kgewrg/ktel-planner/blob/main/Description_images/image3.png" alt="εικόνα 3" width="150"/>
-</p> 
+A new Flutter project.
 
-# Εγκατάσταση
-Η εφαρμογή προς το παρών είναι διαθέσιμη μόνο για κινητά android.
-Ο χρήστης μπορεί να κατεβάσει το .apk απο τον παρακάτω σύνδεσμο και να το εγκαταστάσει απο την εφαρμογή "αρχεία" του κινητού του.
-- [Ktel Planner (v1.0.1)](https://github.com/Kgewrg/ktel-planner/releases/download/v1.0.1/Ktel_Planner.apk)
+## Getting Started
 
-Η ενημέρωση της εφαρμογής μπορεί να γίνει κατεβάζοντας την τελευταία έκδοση και εγκαθιστώντας την.
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
+- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
