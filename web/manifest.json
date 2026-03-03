@@ -1,6 +1,6 @@
 {
-    "name": "ktel_planner_new",
-    "short_name": "ktel_planner_new",
+    "name": "ktel_planner",
+    "short_name": "ktel_planner",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
