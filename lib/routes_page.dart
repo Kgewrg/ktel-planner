@@ -81,7 +81,7 @@ class ErrorWidget extends StatelessWidget {
           ), // error Message
           FilledButton(
             style: ButtonStyle(
-              padding: MaterialStateProperty.all(
+              padding: WidgetStateProperty.all(
                   const EdgeInsets.fromLTRB(50, 2, 50, 2)),
             ),
             onPressed: () => Navigator.pop(context),
@@ -123,6 +123,7 @@ class MainRoutesWidget extends StatelessWidget {
               itemBuilder: (context, index) {
                 final route = widget.routes[index];
                 return Card(
+                  color: Color.fromARGB(255, 67, 67, 67),
                   margin: const EdgeInsets.all(8),
                   child: ListTile(
                     title: Text(
