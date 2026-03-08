@@ -61,21 +61,21 @@ class MainAppBody extends StatelessWidget {
                 Expanded(child: CitiesList(cityDef: "destin"))
               ])),
           Container(
-            color: activeTheme.colorScheme.background,
+            color: activeTheme.colorScheme.surface,
             child: const Divider(height: 6, color: Colors.black, thickness: 2),
           ),
           Container(
-            color: activeTheme.colorScheme.background,
+            color: activeTheme.colorScheme.surface,
             child: const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [Text("Ημέρα: "), DayDropdown()]),
           ),
           Container(
-            color: activeTheme.colorScheme.background,
+            color: activeTheme.colorScheme.surface,
             child: DelayTimes(),
           ),
           Container(
-            color: activeTheme.colorScheme.background,
+            color: activeTheme.colorScheme.surface,
             child: const Padding(
                 padding: EdgeInsets.only(right: 2.5, bottom: 3),
                 child: Row(
@@ -156,7 +156,7 @@ class _DelayTimesState extends State<DelayTimes> {
           return Container(
             height: 200,
             decoration: BoxDecoration(
-              color: Theme.of(context).colorScheme.background,
+              color: Theme.of(context).colorScheme.surface,
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
@@ -267,7 +267,6 @@ class _SearchRouteButtonState extends State<SearchRouteButton> {
               ],
             );
           });
-
       return;
     }
 
@@ -281,6 +280,27 @@ class _SearchRouteButtonState extends State<SearchRouteButton> {
           builder: (BuildContext context) {
             return AlertDialog(
               content: Text("Η αφετηρία ή ο προορισμός δεν επιλέχθηκαν."),
+              actions: [
+                TextButton(
+                    onPressed: () => Navigator.of(context).pop(),
+                    child: Text("OK"))
+              ],
+            );
+          });
+      return;
+    }
+
+    // check if the departure and destination are the same
+    if (globals.departureCity == globals.destinationCity) {
+      Navigator.pop(context); // Remove loading
+
+      // Εμφανίζει μύνημα που δηλώνει το πρόβλημα
+      showDialog(
+          context: context,
+          builder: (BuildContext context) {
+            return AlertDialog(
+              content: Text(
+                  "Η αφετηρία ή ο προορισμός δεν μπορεί να είναι το ίδιο."),
               actions: [
                 TextButton(
                     onPressed: () => Navigator.of(context).pop(),
@@ -322,7 +342,7 @@ class _SearchRouteButtonState extends State<SearchRouteButton> {
 
   @override
   Widget build(BuildContext context) {
-    return FilledButton(
+    return ElevatedButton(
       onPressed: () => buttonAction(),
       child: const Text("Αναζήτηση"),
     );
@@ -487,7 +507,7 @@ class _CitiesListState extends State<CitiesList> {
         ),
         Expanded(
           child: Container(
-            color: Theme.of(context).colorScheme.background,
+            color: Theme.of(context).colorScheme.surface,
             child: TextField(
               onChanged: (value) => runFilter(value),
               decoration: InputDecoration(
@@ -539,7 +559,7 @@ class _CitiesListState extends State<CitiesList> {
         return Theme.of(context).colorScheme.tertiary;
       }
     }
-    return Theme.of(context).colorScheme.background;
+    return Theme.of(context).colorScheme.surface;
   }
 }
 
